@@ -1,0 +1,200 @@
+html {
+    scroll-behavior: smooth;
+}
+.bg-overlay.pattern {
+    background: url(../../images/back/pattern.png);
+    z-index: -1;
+}
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+#pageintro{
+    display: flex;
+    align-items: center;
+}
+#pageintro article{
+    display: inline-block;
+}
+#div_photo{
+    display: inline-block;
+    width: 45%;
+    text-align: right;
+}
+#div_photo img{
+    max-width: 80%;
+}
+@media screen and (max-width: 750px){
+    #div_photo{
+        display: none;
+    }
+}
+#introblocks{
+    margin-top: 10px;
+}
+#introblocks .elements article{
+    min-height: 20px;
+    padding: 5px 10px;
+}
+.contact_item{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.contact_item p{
+    margin: auto;
+}
+.elements article i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+#myCanvasContainer{
+    margin-top: 40px;
+    width: 700px;
+    float: left;
+}
+#sec_proskill{
+    width: calc(100% - 700px);
+    min-width: 300px;
+    float: left;
+    margin-top: 50px;
+}
+@media screen and (max-width: 1100px){
+    #sec_proskill{
+        width: 100%;
+        margin-top: 100px;
+    }
+}
+
+.chart100{
+    position: absolute;
+    top: 100px;
+    width: 700px;
+    height: 500px;
+    z-index: -1;
+    text-align: center;
+}
+
+.chart100 i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    line-height: 600px;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: normal;
+}
+.pr-charts .pr-chart-ctrl {
+    min-width: 200px;
+}
+.pr-charts .pr-chart-ctrl .pr-chart {
+    margin: 0 0 5px 0;
+}
+#sec_proskill .pr-chart-ctrl p{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#sec_proskill i{
+    font-size: 30px;
+    font-weight: bold;
+}
+@media screen and (max-width: 630px){
+    #sec_proskill{
+        margin-top: 0;
+    }
+    #myCanvasContainer{
+        display: none;
+    }
+    #sec_proskill .pr-chart-ctrl p{
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+}
+.cc-education-header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#education .card-body .h5{
+    margin-bottom: 0;
+}
+#education .card .card-body {
+    min-height: 150px;
+}
+#education .card{
+    border-radius: 20px;
+}
+.explogo{
+    width: 100%;
+    border-radius: 10px;
+}
+.expyear{
+    color: #4e4e4e;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+}
+.position{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.company{
+    font-size: 20px;
+    text-align: center;
+    color: #9A9A9A;
+    font-weight: 700;
+}
+.expcontent{
+
+}
+#employ .card{
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+#employ .card:hover{
+    transform: scale(1.05);
+}
+#employ .card .col-md-3{
+    background-color: #d7d7d7;
+}
+#employ .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+#employ .card .col-md-3 .card-body{
+    padding-left: 0;
+    padding-right: 0;
+}
+#div_skill.overlay::after{
+    background: rgba(0,0,0,.8);;
+}
+#div_education.overlay::after{
+    background: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+#navbar.sticky #mainav li a{
+    padding: 17px 0;
+}
+#navbar.sticky #header #logo{
+    margin: 10px 0 10px 0;
+}
+#navbar.sticky{
+    background-color: rgb(126 97 97 / 73%);

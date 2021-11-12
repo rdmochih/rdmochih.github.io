@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+<title>ZhuMing</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
+<link href="layout/styles/aos.css?ver=1.1.0" rel="stylesheet">
+<link href="layout/styles/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+<link href="layout/styles/main1.css?ver=1.1.0" rel="stylesheet">
+<noscript>
+    <style type="text/css">
+      [data-aos] {
+          opacity: 1 !important;
+          transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div id="osci_main" class="bgded" style="background-image:url('images/back/back8.jpg');  background-attachment: fixed;"> 
+    <canvas style="position: absolute;left:0;z-index: 0;" id="canvas" width="1209" height="937"></canvas>
+  <div class="wrapper overlay row0" style="visibility: hidden;">
+    <div id="topbar" class="hoc clear">
+      <div class="fl_left"> 
+        <ul class="nospace">
+          <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>
+          <li><i class="far fa-envelope rgtspace-5"></i> info@domain.com</li>
+        </ul>
+      </div>
+      <div class="fl_right"> 
+        <ul class="nospace">
+          <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="#" title="Help Centre"><i class="far fa-life-ring"></i></a></li>
+          <li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+          <li><a href="#" title="Sign Up"><i class="fas fa-edit"></i></a></li>
+          <li id="searchform">
+            <div>
+              <form action="#" method="post">
+                <fieldset>
+                  <legend>Quick Search:</legend>
+                  <input type="text" placeholder="Enter search term&hellip;">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="navbar" class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left"> 
+        <h1 class="logoname"><a href="index.html">Zhu<span> Ming</span></a></h1>
+      </div>
+      <nav id="mainav" class="fl_right"> 
+        <ul class="clear">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#div_contact">Contact</a></li>
+          <li><a href="#div_skill">My Skills</a></li>
+          <li><a href="#div_portfolio">Portfolio</a></li>
+          <li><a href="#div_education">Education</a></li>
+          <li><a href="#div_employ">Experience</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="wrapper overlay">
+    
+    <div id="pageintro" class="hoc clear"> 
+      <article>
+        <p>Hello. I am Zhu Ming, </p>
+        <h3 class="heading">Blockchain & FullStack Developer</h3>
+        <p>I have worked as a senior full stack developer and recently fully focused on blockchain developemnt for 2 years. 
+            I have already enough experience with Smart Contract and dApps creation where most of them were built using Ethereum.
+            Working as lead developer of excellent software developing team. <br>Always ready for your job.
+        </p>
+      </article>
+      <div id="div_photo">
+        <img src="./images/back/photo.png" alt="My Photo" width="200">
+      </div>
+    </div>
+  </div>
+</div>
+<div id="div_contact" class="wrapper row3">
+  <main class="hoc container clear" style="padding: 20px 0;"> 
+    <section id="introblocks">
+        <ul class="nospace group elements elements-three">
+          <li class="one_third">
+            <article>
+                <div class="contact_item"><a href="javascript:void(0)"><i class="fas fa-envelope"></i></a>
+                    <p>zhumingdev716@gmail.com</p></div>
+            </article>
+          </li>
+          <li class="one_third">
+            <article>
+                <div class="contact_item"><a href="https://github.com/Pyweb-master" target="_blank"><i class="fab fa-github"></i></a>
+                    <p>https://github.com/Pyweb-master</p></div>
+            </article>
+          </li>
+          <li class="one_third">
+            <article>
+                <div class="contact_item"><a href="https://linkedin.com/zhuming" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <p>https://linkedin.com/zhuming</p></div>
+            </article>
+          </li>
+          <li class="one_third">
+            <article>
+                <div class="contact_item"><a href="javascript:void(0)"><i class="fas fa-language"></i></a>
+                    <p>English, Chinese</p></div>
+            </article>
+          </li>
+          <li class="one_third">
+            <article>
+                <div class="contact_item"><a href="javascript:void(0)"><i class="fas fa-map-marker-alt"></i></a>
+                    <p>483 River Valley Rd, Singapore</p></div>
+            </article>
+          </li>
+        </ul>
+      </section>
+  </main>
+</div>
+<div id="div_skill" class="bgded overlay" style="background-image:url('images/back/back10.jpg'); background-attachment: fixed;">
+  <div class="bg-overlay pattern"></div>
+    <div style="padding-top: 50px;">
+        <h6 class="heading font-x3" style="text-align: center; font-family: sans-serif;">Professional Skills</h6>
+        <div id="myCanvasContainer">
+            <canvas width="700" height="500" id="myCanvas"> </canvas>
+            <div class="pr-chart-ctrl chart100" data-animate="false">
+                <div class="pr-chart" data-percent="100" style="width: 100%; height: 100%;"><i></i></div>
+            </div>
+            <div id="tags">
+                <ul>
+                    <li><a style="font-size: 3ex" href="javascript:void(0)">HTML</a></li>
+                    <li><a style="font-size: 3ex" href="javascript:void(0)">ES5/ES6</a></li>
+                    <li><a style="font-size: 3ex" href="javascript:void(0)">Jquery</a></li>
+                    <li><a style="font-size: 4ex" href="javascript:void(0)">Node</a></li>
+                    <li><a style="font-size: 4ex" href="javascript:void(0)">Vue</a></li>
+                    <li><a style="font-size: 4ex" href="javascript:void(0)">TypeScript</a></li>
+                    <li><a style="font-size: 3ex" href="javascript:void(0)">PHP</a></li>
+                    <li><a style="font-size: 4ex" href="javascript:void(0)">Laravel</a></li>
+                    <li><a style="font-size: 4ex" href="javascript:void(0)">Flask</a></li>
+                    <li><a style="font-size: 6ex" href="javascript:void(0)">Python</a></li>
+                    <li><a style="font-size: 6ex" href="javascript:void(0)">React</a></li>
+                    <li><a style="font-size: 6ex" href="javascript:void(0)">MERN</a></li>
+                    <li><a style="font-size: 6ex" href="javascript:void(0)">Django</a></li>
+                    <li><a style="font-size: 4ex" href="javascript:void(0)">Mysql</a></li>
+                    <li><a style="font-size: 4ex" href="javascript:void(0)">GraphQL</a></li>
+                    <li><a style="font-size: 4ex" href="javascript:void(0)">MongoDB</a></li>
+                    <li><a style="font-size: 3ex" href="javascript:void(0)">Git</a></li>
+                    <li><a style="font-size: 3ex" href="javascript:void(0)">Docker</a></li>
+                    <li><a style="font-size: 3ex" href="javascript:void(0)">Amazon</a></li>
+                    <li><a style="font-size: 4ex" href="javascript:void(0)">Heroku</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="sec_proskill"> 
+            <ul class="pr-charts nospace group center">
+              <li class="pr-chart-ctrl" data-animate="false">
+                <div class="pr-chart" data-percent="95"><i></i></div>
+                <p>Ethereum</p>
+              </li>
+              <li class="pr-chart-ctrl" data-animate="false">
+                <div class="pr-chart" data-percent="80"><i></i></div>
+                <p>SmartContract</p>
+              </li>
+              <li class="pr-chart-ctrl" data-animate="false">
+                <div class="pr-chart" data-percent="90"><i></i></div>
+                <p>Solidity</p>
+              </li>
+              <li class="pr-chart-ctrl" data-animate="false">
+                <div class="pr-chart" data-percent="80"><i></i></div>
+                <p>NFT</p>
+              </li>
+              <li class="pr-chart-ctrl" data-animate="false">
+                <div class="pr-chart" data-percent="70"><i></i></div>
+                <p>DeFi</p>
+              </li>
+              <li class="pr-chart-ctrl" data-animate="false">
+                <div class="pr-chart" data-percent="80"><i></i></div>
+                <p>DApps</p>
+              </li>
+            </ul>
+        </section>
+        <div class="clear" style="height: 100px;"></div>
+    </div>
+
+  
+</div>
+<div id="div_portfolio" class="wrapper row2">
+    <section id="portfolio" class="hoc container clear"> 
+        <div class="sectiontitle">
+          <h6 class="heading font-x2" style="font-family: sans-serif; color: rgb(31, 31, 31); font-weight: bold;">Portfolio</h6>
+        </div>
+        <div class="tab-content gallery mt-5">
+            <div class="tab-pane active" id="web-development">
+              <div class="ml-auto mr-auto">
+                <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#web-development">
+                            <figure class="cc-effect"><img src="images/portfolio/dt.png" alt="Image"/>
+                                <figcaption>
+                                    <div class="h4">Staking Tool</div>
+                                    <p>SmartContract Development</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#web-development">
+                            <figure class="cc-effect"><img src="images/portfolio/at.png" alt="Image"/>
+                                <figcaption>
+                                    <div class="h4">Swap Token</div>
+                                    <p>React DApp Development</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#web-development">
+                            <figure class="cc-effect"><img src="images/portfolio/dg.png" alt="Image"/>
+                                <figcaption>
+                                    <div class="h4">Liqudity</div>
+                                    <p>React Web3js DApp Development</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#web-development">
+                            <figure class="cc-effect"><img src="images/portfolio/dr.png" alt="Image"/>
+                                <figcaption>
+                                    <div class="h4">NFT Marketplace</div>
+                                    <p>SmartContract Development</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#web-development">
+                            <figure class="cc-effect"><img src="images/portfolio/gg.png" alt="Image"/>
+                                <figcaption>
+                                    <div class="h4">GridGamingIO</div>
+                                    <p>Django TwitterAPI Development</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#web-development">
+                            <figure class="cc-effect"><img src="images/portfolio/gl.png" alt="Image"/>
+                                <figcaption>
+                                    <div class="h4">Job Site</div>
+                                    <p>MERN Development</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#web-development">
+                            <figure class="cc-effect"><img src="images/portfolio/rr.png" alt="Image"/>
+                                <figcaption>
+                                    <div class="h4">RoofRuler</div>
+                                    <p>Javascript, Leaflet GoogleMap Development</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#web-development">
+                            <figure class="cc-effect"><img src="images/portfolio/tt.png" alt="Image"/>
+                                <figcaption>
+                                    <div class="h4">TrueTimber</div>
+                                    <p>React Development</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#web-development">
+                            <figure class="cc-effect"><img src="images/portfolio/smc.png" alt="Image"/>
+                                <figcaption>
+                                    <div class="h4">Meeting Platform</div>
+                                    <p>Django React ZoomAPI</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+  
+</div>
+
+<div id="div_education" class="bgded overlay row4" style="background-image:url('images/back/sit.jpg'); background-attachment: fixed;">
+    <div class="bg-overlay pattern">
+    </div>
+    <section id="education" class="hoc container clear" style="padding-top: 60px;"> 
+      <div class="sectiontitle" style="margin-bottom: 40px;">
+        <h6 class="heading font-x2" style="font-family: sans-serif; color: white; font-weight: bold;">Education</h6>
+      </div>
+      <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-education-header">
+                <p>2009 - 2013</p>
+                <div class="h5">Bachelor's Degree</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5"  style="color: black;">Bachelor of Information Technology</div>
+                <p class="category">Singapore Institute of Technology</p>
+                <p  style="color: black;">Specialized in computer security and started learning about cryptography and graduated the university with barchelor's degree. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-education-header">
+                <p>2003 - 2009</p>
+                <div class="h5">High School</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5" style="color: black;">Information Technology</div>
+                <p class="category">River Valley High School</p>
+                <p style="color: black;">Specialized in computer security and started learning about cryptography and graduated the university with barchelor's degree. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+    </section>
+
+</div>
+
+<div id="div_employ" class="wrapper row3" style="background-color: #123e23e6;">
+  <section id="employ" class="hoc container clear" style="padding-top: 60px;"> 
+    <div class="sectiontitle" style="margin-bottom: 40px;">
+      <h6 class="heading font-x2" style="font-family: sans-serif; font-weight: bold; color: white">Employment History</h6>
+    </div>
+    <div class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card-body">
+              <img class="explogo" src="./images/com/ast.png" alt="My Company" width="200">
+              <p class="expyear">May 2020 -  Oct 2021</p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <p class="position">DApp FrontEnd Developer</p>
+              <p class="company">ASTRONOMIA</p>
+              <p  class="expcontent">
+                -  Develop FrontEnd working with smart contract using Web3js based on React.
+                <br>- Perfect implementation and exact same design as client require.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card-body">
+              <img class="explogo" src="./images/com/dxt.png" alt="My Company" width="200">
+              <p class="expyear">Dec 2019 -  Apr 2020</p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <p class="position">FullStack Developer</p>
+              <p class="company">DXT</p>
+              <p  class="expcontent">
+                  - Created and deployed staking contract for the platform token and created a demo DApp for staking contract. Implemented and deployed the graph for staking contract tracking all events and allowing more advanced queries in blockchain.
+                 <br> - Participate in creating MVP of front-end as parttime job.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card-body">
+              <img class="explogo" src="./images/com/radar.png" alt="My Company" width="200">
+              <p class="expyear">Mar 2019 -  Aug 2019</p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <p class="position">SmartContract Developer</p>
+              <p class="company">RADAR</p>
+              <p  class="expcontent">
+                - Created SAVENFT ICO token for presale and dApp
+              <br>- Integrated defistation for market place
+              <br>- Updated Farming contract for CTF and NFTL and their dApp & created Auction contract for nftl art auction and its dApp
+              <br>- Created CTF and NFTL token for V2 and created LP tokens
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card-body">
+              <img class="explogo" src="./images/com/gg.png" alt="My Company" width="200">
+              <p class="expyear">May 2019 -  Apr 2021</p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <p class="position">Lead FullStack Developer</p>
+              <p class="company">GridGamingIO</p>
+              <p  class="expcontent">
+                - Perfect Backend implementation working with TwitterAPI by Django to launch Twitter Giveaway. 
+              <br>- Functional Frontend design and provide user friendful design with Material UI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card-body">
+              <img class="explogo" src="./images/com/gl.png" alt="My Company" width="200">
+              <p class="expyear">Aug 2018 -  Oct 2019</p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <p class="position">Lead FullStack Developer</p>
+              <p class="company">GoLooka</p>
+              <p  class="expcontent">
+                - Design whole workflows of Job looking site. 
+                <br>-  Beautiful and functional design based on ReactJS.
+                <br>- Full functional support from Node backend.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card-body">
+              <img class="explogo" src="./images/com/smc.png" alt="My Company" width="200">
+              <p class="expyear">Apr 2017 -  Oct 2018</p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <p class="position">Lead FullStack Developer</p>
+              <p class="company">Server Master Class</p>
+              <p  class="expcontent">
+                - Integrated with Zoom Platform to support meetings.
+                <br>- Build functional design with React. 
+                <br>- Backend with Django.
+                <br>- Have capacity of over 100 users and several departments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+</div>
+<div class="wrapper coloured">
+  
+</div>
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="layout/scripts/osciliator.js"></script>
+<script src="layout/scripts/tagcanvas.js"></script>
+<script src="layout/scripts/popper.min.js?ver=1.1.0"></script>
+<script src="layout/scripts/bootstrap.min.js?ver=1.1.0"></script>
+<script src="layout/scripts/aos.js?ver=1.1.0"></script>
+<script src="layout/scripts/main.js?ver=1.1.0"></script>
+
+<!-- Homepage specific -->
+<script src="layout/scripts/jquery.easypiechart.min.js"></script>
+<!-- / Homepage specific -->
+<script>
+    $(function(){
+        initOciliator(false);
+        try {
+          TagCanvas.Start('myCanvas','tags',{
+            textColour: '#00ff00',
+            textFont: 'Impact,"Arial Black",sans-serif',
+            textHeight: 10,
+            outlineColour: '#0000ff',
+            clickToFront: 400,
+            reverse: true,
+            depth: 1,
+            maxSpeed: 0.05,
+            outlineMethod: "colour",
+            weight: true,
+            weightMode: "size",
+            weightSize: 1,
+            wheelZoom: false,
+
+          });
+        } catch(e) {
+          // something went wrong, hide the canvas container
+          document.getElementById('myCanvasContainer').style.display = 'none';
+        }
+    })
+    window.addEventListener('resize', function(){
+        ww = parseInt(window.innerWidth);
+
+    });
+</script>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+
+</body>
+</html>
